@@ -965,6 +965,7 @@ Mix_MusicInterface Mix_MusicInterface_ADLIMF =
     ADLMIDI_LoopEnd,   /* LoopEnd [MIXER-X]*/
     ADLMIDI_LoopLength,   /* LoopLength [MIXER-X]*/
     ADLMIDI_GetMetaTag,   /* GetMetaTag [MIXER-X]*/
+    NULL,   /* GetUserTag [MIXER-X]*/
     NULL,   /* Pause */
     NULL,   /* Resume */
     NULL,   /* Stop */

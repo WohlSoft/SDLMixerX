@@ -58,7 +58,6 @@ typedef enum
     MIX_META_LAST
 } Mix_MusicMetaTag;
 
-
 /* MIXER-X: Meta-tags utility structure */
 
 typedef struct {
@@ -150,6 +149,9 @@ typedef struct
 
     /* MIXER-X: Get a meta-tag string if available */
     const char* (*GetMetaTag)(void *music, Mix_MusicMetaTag tag_type);
+    
+    /* MIXER-X: Get an arbitrary meta-tag string if available */
+    const char* (*GetUserTag)(void *music, const char* tag_name);
 
     /* Pause playing music */
     void (*Pause)(void *music);

@@ -516,6 +516,7 @@ Mix_MusicInterface Mix_MusicInterface_MPG123 =
     NULL,   /* LoopEnd [MIXER-X]*/
     NULL,   /* LoopLength [MIXER-X]*/
     MPG123_GetMetaTag,/* GetMetaTag [MIXER-X]*/
+    NULL,   /* GetUserTag [MIXER-X]*/
     NULL,   /* Pause */
     NULL,   /* Resume */
     NULL,   /* Stop */
